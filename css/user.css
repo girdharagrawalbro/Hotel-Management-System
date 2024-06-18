@@ -1,0 +1,115 @@
+body {
+    background-color: whitesmoke;
+}
+.main {
+    margin: 0 5% 0 5%;
+}
+.pro {
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+.pro .data {
+    display: flex;
+    justify-content: space-around;
+}
+.pro .data input,
+.pro .data .in ,.pro .data .in textarea{
+    width: 100%;
+    padding: 8px;
+}
+.pro .data .in label {
+    margin-bottom: 15px;
+}
+.pro form button {
+    background-color: #39ce83;
+    border-radius: 5px;
+    margin: 10px;
+}
+.pro .data .pro_img {
+    width: 240px;
+    border-radius: 100%;
+}
+.bookings-card{
+    width: 230px;
+}   
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-button {
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #333;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.room-image {
+  width: 40%;
+  text-align: left;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.room-data{
+  padding: 10px 10px 0px 30px;
+  margin-left:20px;
+}
+
+.book-button {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.container .hero h6{
+      color: lightslategray;
+}
+@media screen and (max-width: 768px) {
+  .pro{
+    width: 312px;
+    margin-bottom: 30px;
+  }
+  .pro .data {
+      flex-direction: column;
+      width: 100%;
+    }
+    .pro .data br{
+      display: none;
+    }
+    .pro .data .in br{
+      display: block;
+    }
+    .pro .data img{
+        width: 280px;
+    }
+.room-data{
+   margin-left:0px;
+}
+.room-image{
+  width: 100%;
+  text-align: center;
+}
+}

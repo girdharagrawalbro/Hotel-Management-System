@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.sidenav {
+    position: fixed;
+    background-color: #333;
+    margin-top: 5.5%;
+    width: 153px;
+    text-align: center;
+    height: 100%;
+    color: #ffffff;
+}
+.sidenav ul li {
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    height: 50px;
+    cursor: pointer;
+    /* margin-bottom: 5px; */
+    transition: .5 ease-in-out;
+}
+.sidenav ul li:hover {
+    border-left: 2px solid cyan;
+    background-color: #141dd498;
+}
+ul li.active {
+    background-color: #141dd498;
+    border-left: 2px solid cyan;
+}
+ul ul {
+    display: none;
+    position: absolute;
+    /* top: ; */
+    left: 150PX;
+    background-color: #333;
+    width: 170px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+       li:hover > ul {
+    display: block;
+}
+.frames {
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+.active {
+    display: block;
+}
+.mainscreen {
+    width: 100% ;
+    margin-top: 4%;
+    margin-left: 12%;
+}
+#mobileview {
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+*::-webkit-scrollbar{
+    width: 0px;
+}
+.dash {
+    margin: auto;
+}
+.databox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.databox .box {
+    height: 100px;
+    width: 250px;
+    background-color: white;
+    border: .5px solid #333;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.databox .box h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+.dash .databox .box h3{
+    font-size: 30px;
+}     
+.dash h2{
+    /* text-transform: uppercase ; */
+    font-size: 18px;
+    margin: 0 20px 20px 20px;
+}        
+.chartbox {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+.bookroomchart {
+    padding: 5px;
+    padding-bottom: 0;
+    width: 550px;
+    height: 450px;
+    background-color: #ffff;
+    border-radius: 3px;
+}
+.bookroomchart .frame {
+    width: 70%;
+    margin-left: 80px;
+    height: 60vh;
+}
+.bookroomtablechart {
+    padding: 5px;
+    width: 1100px;
+    height: 100%;
+    background-color: #ffff;
+    border-radius: 3px;
+}
+.bookroomtablechart .frame {
+    width: 90%;
+    margin-left: 40px;
+    height: 80vh;
+}
+.filter select,
+    .filter input,
+    .filter option {
+        width: 200px;
+        padding: 5px    ;
+    }
+   .filter button {
+        background-color: #CC8C18;
+        padding: 5px 10px;
+    }
+table {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    border-collapse: collapse;
+    text-align: center;
+}
+table .head {
+    background-color: #333;
+    color: white;
+    border-collapse: collapse;
+}
+table .head th {
+    padding: 10px;
+    border-collapse: collapse;
+    border: none;
+}
+table tr td {
+    padding: 5px 0;
+    border-bottom: .5px solid #333;
+}
+table tr td li {
+    text-align: center;
+    padding: 0 5px;
+    color: black;
+    font-weight: 600;
+}
+table tr td li:hover {
+    background-color: whitesmoke;
+}
+table tr td li span {
+    color: #333;
+    font-weight: 400;
+}
+table tr td button{
+    background-color: green;
+    padding: 5px 8px;
+}
+table tr td .action{
+    background-color: lightskyblue;
+    padding: 5px 15px;
+}
+    .filter select,
+    .filter input,
+    .filter option {
+        width: 200px;
+    }
+    button {
+        background-color: blue;
+        padding: 5px 10px;
+    }
+    table {
+        width: 95%;
+        margin: auto;
+        margin-top: 15px;
+        border-collapse: collapse;   text-align: center;
+    }
+    table .head {
+        background-color: #333;
+        color: white;
+        border-collapse: collapse;
+    }
+    table .head th {
+        padding: 10px;
+        border-collapse: collapse;
+        border: none;
+    }
+    table tr td {
+        padding: 5px 10px;
+        border-bottom: .5px solid #333;
+    }
+    table tr td li {
+        text-align: left;
+        padding: 0 5px;
+        color: black;
+        font-weight: 600;
+    }
+    table tr td li:hover {
+        background-color: whitesmoke;
+    }
+    table tr td li span {
+        color: #333;
+        font-weight: 400;
+    }
+    table tr td button {
+        background-color: green;
+        padding: 5px 8px;
+    }
+    table tr td .action {
+        background-color: lightskyblue;
+        padding: 5px 15px;
+    }

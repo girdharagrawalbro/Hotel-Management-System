@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #F3F3F3;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.home {
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url("../resources/hotel2.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  text-align: center;
+}
+
+.home h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 150px;
+  color: white;
+  padding-top: 10%;
+}
+
+.home p {
+  color: white;
+}
+
+button {
+  background: #CC8C18;
+  color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+button:hover {
+  background-color: #ffa400;
+}
+
+button i {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+button span {
+  margin-top: 5px;
+}
+
+.mtop {
+  margin: 40px 0;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h5 {
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #CC8C18;
+  padding-top: 20px;
+}
+
+.heading h2 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+section h3 {
+  font-size: 35px;
+  font-family: serif;
+  color: #24416B;
+  margin-bottom: 20px;
+}
+
+.about .left {
+  padding: 20px;
+}
+
+p {
+  line-height: 30px;
+  color: #a4a4a4;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.about {
+  padding-bottom: 70px;
+}
+
+.wrapper {
+  background-image: url("http://hotelbluebird.great-site.net/resources/home2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+.wrapper .container {
+  max-width: 50%;
+  margin: auto;
+}
+
+.wrapper .item {
+  background: white;
+  padding: 10px 50px;
+  border: 30px solid #F3F3F3;
+}
+
+.wrapper .heading {
+  text-align: center;
+}
+
+.wrapper .heading h2,
+.wrapper .heading span {
+  color: white;
+}
+
+.wrapper2 {
+  text-align: center;
+}
+
+.wrapper2 .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.wrapper2 .box {
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.329);
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.wrapper2 i {
+  margin: 10px 0 15px 0;
+  color: #CC8C18;
+  font-size: 30px;
+}
+
+.wrapper2 h3 {
+  font-size: 20px;
+}
+
+.wrapper2 span {
+  padding: 10px;
+  background: #F5E8D1;
+  color: #CC8C18;
+  border-radius: 50%;
+}
+
+.wrapper2 .box:hover {
+  background: #CC8C18;
+  cursor: pointer;
+}
+
+.wrapper2 .box:hover span {
+  background: #fff;
+}
+
+.wrapper2 .box:hover p,
+.wrapper2 .box:hover h3,
+.wrapper2 .box:hover i {
+  color: white;
+}
+
+.room {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.room img {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.room h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.background::after {
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  background: #333;
+  color: white;
+  padding: 20px 30px;
+  padding-bottom: 20px;
+  width: 100%;
+  align-self: end;
+}
+
+.subscribe {
+  text-align: center;
+  width: 100%;
+}
+
+.subscribe .flex form {
+  width: 80%;
+  margin: auto;
+}
+
+.subscribe .flex .form-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subscribe .flex .form-flex input,
+.subscribe .flex .form-flex textarea {
+  width: 200px;
+  border: none;
+  margin: 5px 0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.userinfo {
+  background-color: #dad8d857;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 20px 10px;
+  color: black;
+}
+
+.userinfo div {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.userinfo div label,
+.userinfo div input {
+  font-size: 18px;
+  padding: 5px 8px;
+}
+
+.userinfo div h4 {
+  font-size: 18px;
+  text-align: left;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .home {
+    max-height: 75vh;
+  }
+
+  .home h1 {
+    margin-top: 10%;
+    font-size: 90px;
+  }
+
+  .check-avail form {
+    flex-direction: column;
+  }
+
+  .heading h2 {
+    font-size: 35px;
+  }
+
+  section h3 {
+    font-size: 25px;
+  }
+
+  .about {
+    margin-top: -100px;
+  }
+
+  .about .left {
+    width: 100%;
+  }
+
+  .about .right {
+    display: none;
+  }
+
+  .wrapper {
+    margin-top: -80px;
+  }
+
+  .wrapper .container {
+    max-width: 100%;
+  }
+
+  .wrapper .item {
+    padding: 10px 20px;
+    border: 5px solid white;
+  }
+
+  .wrapper2 {
+    margin-top: 50%;
+  }
+
+  .wrapper2 .grid {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .wrapper2 .box {
+    box-shadow: none;
+    border: 1px solid lightgray;
+    padding: 15px;
+    width: 200px;
+  }
+
+  .subscribe .flex .form-flex {
+    flex-direction: column;
+    place-items: center;
+  }
+
+}

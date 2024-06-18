@@ -1,0 +1,180 @@
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;  
+    transition: 0.5s;
+}
+.flex1 {
+    display: flex;
+    margin: 0 20px;
+    justify-content: space-between;
+}
+.flex1 .logo {
+    display: flex;
+}
+.flex1 .logo img {
+    width: 120px;
+    margin-right: 10px;
+}
+/*-------------header--------- */
+header {
+    background-color: #333;
+    position: fixed ;
+    width: 100%;
+    overflow: visible;
+    padding: 15px 0 15px 0;
+    color: white;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header li {
+    margin-right: 30px;
+}
+header ul li a {
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+    padding: 10px;
+}
+header ul li a:hover {
+    color: #000;
+    background-color: whitesmoke;
+}
+.menu-icon {
+    display: none;
+}
+.menu-icon {
+    display: none;
+}
+
+.btn-sec .btn {
+    border-radius: 5px;
+}
+.btn-sec .btn:hover {
+    background-color: #ffa400;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-button {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 30%;
+    width: 500px;
+         }
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 100%
+}
+.log-flex-col {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.modal-content .log-main input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 4px;
+}
+.modal-content .log-name h4 {
+    font-size: 24px;
+}
+.close {
+    color: #333;
+    /* float: right; */
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close:hover {
+    color: black;
+}
+#message {
+    color: #ff0000;
+    position: relative;
+    padding: 2px;
+    margin-top: 2px;
+}
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    .nav-menu.show {
+        display: flex;
+    }
+    .nav-menu li {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        font-size: 24px;
+        margin-right: 20px;
+        line-height: 70px;
+    }
+    .btn-sec{
+        display: flex;
+    }
+    .btn-sec .btn {
+    padding-left:8px;
+    margin-left: 5px; 
+    padding-right: 8px;  
+
+}
+
+.modal {
+    top: 10%;
+    left: -5%;
+    width: 400px;
+}
+}
